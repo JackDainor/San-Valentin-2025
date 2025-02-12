@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="SanValentinStyle.css">
+	<title>San Valentin</title>
+</head>
+<body>
+
+	<div class="container">
+	  <div class="col">
+	    <div class="heart heart1">
+	      <div class="circle"></div>
+	      <div class="halfMoon"></div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="heart heart2">
+	      <div class="circle"></div>
+	      <div class="halfMoon"></div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="heart heart3">
+	      <div class="circle"></div>
+	      <div class="halfMoon"></div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="heart heart4">
+	      <div class="circle"></div>
+	      <div class="halfMoon"></div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="heart heart5">
+	      <div class="circle"></div>
+	      <div class="halfMoon"></div>
+	    </div>
+	  </div>
+	</div>
+
+  <!-- Pantalla principal-->
+<div class="contenido">
+	<div class="text">
+	 </div>
+	 
+	 <div class="text2">
+	  <h1><span>¡Feliz San Valentin!<br></span> ¡MI AMOR!</h1>
+	  <p>14-02-2025<br>
+	  <br>
+
+	    <a class="boton" href="ValentinText.html">Ver</a>
+	  </p>
+	  
+	 <style>
+
+.contenido {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 200%;
+	height: 100vh;
+	color: whitesmoke;
+}
+
+.text {
+  width: 200px;
+  height: 200px;
+  background: red;
+  position: relative;
+  box-shadow: 10px 10px 90px #f20044;
+  animation: animtext .6s linear infinite;
+}
+
+@keyframes animtext{
+  0%{
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80%{
+    transform: rotate(-45deg) scale(1);
+  }
+  100%{
+    transform: rotate(-45deg) scale(.8);
+  }
+}
+
+.text::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: red;
+  box-shadow: -10px 10px 90px #f20044;
+  top: -50%;
+  border-radius: 50%;
+}
+
+.text::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: red;
+  box-shadow: 10px -10px 90px #f20044;
+  right: -50%;
+  border-radius: 50%;
+}
+	 
+	 
+    .spam {
+      color: whitesmoke;
+    }
+    
+    p {
+      font-family: fantasy;
+    }
+    
+    .boton {
+      border: 3px solid;
+      margin: 2px;
+      text-decoration: none;
+      padding: 8px;
+      margin-top: 30px;
+      border-radius: 20%;
+      font-size: 30px;
+      color: whitesmoke;
+    }
+    
+  </style>
+  </div>
+  
+  <style>
+    .text2 {
+      text-align: center;
+      position: absolute;
+      animation: animtext2 .6s linear infinite;
+    }
+    
+@keyframes animtext2{
+  0%{
+    transform: rotate(0deg) scale(1.07);
+  }
+  80%{
+    transform: rotate(0deg) scale(1);
+  }
+  100%{
+    transform: rotate(0deg) scale(.8);
+  }
+}
+  </style>
+  
+</div>
+  
+
+</body>
+</html>
